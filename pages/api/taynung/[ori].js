@@ -1,6 +1,6 @@
 import sqlite3 from 'sqlite3';
 
-export default async function getWordsByOri(req, res) {
+module.exports = (req, res) => {
     const db = new sqlite3.Database('./taynungdict.db', (err) => {
       if (err) {
         console.log('Could not connect to database', err)
