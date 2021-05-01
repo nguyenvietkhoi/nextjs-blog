@@ -11,13 +11,13 @@ module.exports = (req, res) => {
 		
 	let sql = 'SELECT * FROM taynung WHERE ori = \'' + req.query.ori + '\'' ;
 
+var gloss = [];
 db.all(sql, [], (err, rows) => {
   if (err) {
     throw err;
   }
   
 
-var gloss = [];
 rows.forEach(function(word){
 	var newgloss = {
 		nom: (word.nom!=null) ? word.nom : "",
@@ -41,8 +41,8 @@ rows.forEach(function(word){
 	gloss.push(newgloss);
 });
 			
-					
-	res.json(gloss);
+			
+	res.json(gloss);		
 });
 
 db.close();
