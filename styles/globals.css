@@ -1,7 +1,56 @@
+@font-face {
+font-family: "Tai Lanna";
+src: url('/fonts/TaiLanna.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: Sawndip;
+src: url('/fonts/sawndip0.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: HanaMinA;
+src: url('/fonts/HanaMinA.ttf') format('truetype')
+;
+unicode-range: U+4E00-9FFF, U+3400-4DBF;
+}
+@font-face {
+font-family: sim-ch_n5100;
+src: url('/fonts/gw2696945.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: HanaMinB;
+src: url('/fonts/HanaMinB.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: "Tai Son La";
+src: url('/fonts/Tai-Son-La.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: "Tai Muong Lay";
+src: url('/fonts/Tai-Muong-Lay.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: "Tai Muong Deng";
+src: url('/fonts/Tai-Muong-Deng.ttf') format('truetype')
+;
+}
+@font-face {
+font-family: "Cambria Tai";
+src: url('/fonts/CambriaTai.ttf') format('truetype')
+;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  color: #fff;
+  background: url(/trong.png);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
