@@ -5,14 +5,13 @@ const {open} = require('sqlite')
 
 async function openDB (){
     return open({
-        filename : './public/taynungdict.db',
+        filename : './database/taynungdict.db',
         driver: sqlite3.Database
     })
 }
 
 export default async function getByOri(req: NextApiRequest, res: NextApiResponse) {
     const db = await openDB();
-
 	var sql;
 	var dict = req.query.dict;
 	var cont = req.query.ori;
