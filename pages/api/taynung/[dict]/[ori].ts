@@ -22,7 +22,6 @@ export default async function getByOri(req: NextApiRequest, res: NextApiResponse
 		sql = 'SELECT * FROM taynung WHERE viet LIKE \'% ' + cont + ' %\' OR viet LIKE \'' + cont + ' %\' OR viet LIKE \'% ' + cont + '\' OR viet = \'' + cont + '\'' ;
 
 	const rows = await db.all(sql);
-	console.log(JSON.stringify(rows));
 
 	var gloss = [];
 rows.forEach(function(word){
