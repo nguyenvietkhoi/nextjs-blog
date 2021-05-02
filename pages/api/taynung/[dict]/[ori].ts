@@ -5,7 +5,7 @@ const {open} = require('sqlite')
 
 async function openDB (){
     return open({
-        filename : './taynungdict.db',
+        filename : './public/taynungdict.db',
         driver: sqlite3.Database
     })
 }
